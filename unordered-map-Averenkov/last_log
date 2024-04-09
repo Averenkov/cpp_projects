@@ -1,0 +1,152 @@
+
+-------- sha256sum -c checksums --------
+test.sh: ЦЕЛ
+test.cpp: ЦЕЛ
+tiny_test.hpp: ЦЕЛ
+CMakeLists.txt: ЦЕЛ
+build.sh: ЦЕЛ
+.clang-tidy: ЦЕЛ
+
+-------- ./build.sh -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc --------
+Building the project...
+-- Configuring done
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= gcc
+CMAKE_CXX_COMPILER= g++
+
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/voventa/unordered-map-Averenkov/build
+calling make...
+building using 16 workers
+[ 50%] Building CXX object CMakeFiles/unordered_map.dir/test.cpp.o
+[100%] Linking CXX executable unordered_map
+[100%] Built target unordered_map
+build ready
+
+-------- ./build/unordered_map --------
+Running group "construction and assignment"
+test "swap"
+[[32mOK[0m]
+test "move assignment with unequal and not propagating allocator"
+[[32mOK[0m]
+test "assignment operators"
+[[32mOK[0m]
+test "copy and move"
+[[32mOK[0m]
+test "default"
+[[32mOK[0m]
+Running group "modification"
+test "move insert range"
+[[32mOK[0m]
+test "insert range"
+[[32mOK[0m]
+test "insert move"
+[[32mOK[0m]
+test "insert nontrivial"
+[[32mOK[0m]
+test "emplace move"
+[[32mOK[0m]
+test "emplace"
+[[32mOK[0m]
+Running group "access"
+test "bucket borders check"
+[[32mOK[0m]
+test "find"
+[[32mOK[0m]
+test "[] move"
+[[32mOK[0m]
+test ".at and []"
+[[32mOK[0m]
+Running group "misc"
+test "load factor"
+[[32mOK[0m]
+
+-------- ./build.sh -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang --------
+Building the project...
+-- Configuring done
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= clang
+CMAKE_CXX_COMPILER= clang++
+
+-- The C compiler identification is Clang 14.0.0
+-- The CXX compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/voventa/unordered-map-Averenkov/build
+calling make...
+building using 16 workers
+[ 50%] Building CXX object CMakeFiles/unordered_map.dir/test.cpp.o
+[100%] Linking CXX executable unordered_map
+[100%] Built target unordered_map
+build ready
+
+-------- ./build/unordered_map --------
+Running group "construction and assignment"
+test "swap"
+[[32mOK[0m]
+test "move assignment with unequal and not propagating allocator"
+[[32mOK[0m]
+test "assignment operators"
+[[32mOK[0m]
+test "copy and move"
+[[32mOK[0m]
+test "default"
+[[32mOK[0m]
+Running group "modification"
+test "move insert range"
+[[32mOK[0m]
+test "insert range"
+[[32mOK[0m]
+test "insert move"
+[[32mOK[0m]
+test "insert nontrivial"
+[[32mOK[0m]
+test "emplace move"
+[[32mOK[0m]
+test "emplace"
+[[32mOK[0m]
+Running group "access"
+test "bucket borders check"
+[[32mOK[0m]
+test "find"
+[[32mOK[0m]
+test "[] move"
+[[32mOK[0m]
+test ".at and []"
+[[32mOK[0m]
+Running group "misc"
+test "load factor"
+[[32mOK[0m]
+
+-------- clang-tidy unordered_map.h --------
+23114 warnings generated.
+Suppressed 23115 warnings (23114 in non-user code, 1 NOLINT).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+

@@ -1,0 +1,3 @@
+/home/voventa/list-Averenkov/build/CMakeFiles/list.dir
+/home/voventa/list-Averenkov/build/CMakeFiles/edit_cache.dir
+/home/voventa/list-Averenkov/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,122 @@
+
+-------- sha256sum -c checksums --------
+test.sh: ЦЕЛ
+test.cpp: ЦЕЛ
+tiny_test.hpp: ЦЕЛ
+CMakeLists.txt: ЦЕЛ
+build.sh: ЦЕЛ
+.clang-tidy: ЦЕЛ
+
+-------- ./build.sh -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc --------
+Building the project...
+-- Configuring done
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= gcc
+CMAKE_CXX_COMPILER= g++
+
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/voventa/list-Averenkov/build
+calling make...
+building using 16 workers
+[ 50%] Building CXX object CMakeFiles/list.dir/test.cpp.o
+[100%] Linking CXX executable list
+[100%] Built target list
+build ready
+
+-------- ./build/list --------
+Running group "constructors"
+test "static asserts"
+[[32mOK[0m]
+test "assignment"
+[[32mOK[0m]
+test "with size"
+[[32mOK[0m]
+test "copy"
+[[32mOK[0m]
+test "default"
+[[32mOK[0m]
+Running group "modification"
+test "exceptions"
+[[32mOK[0m]
+Running group "allocator"
+test "Memory limits"
+[[32mOK[0m]
+test "stackallocator"
+[[32mOK[0m]
+test "exceptional allocator"
+[[32mOK[0m]
+
+-------- ./build.sh -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang --------
+Building the project...
+-- Configuring done
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= clang
+CMAKE_CXX_COMPILER= clang++
+
+-- The C compiler identification is Clang 14.0.0
+-- The CXX compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/voventa/list-Averenkov/build
+calling make...
+building using 16 workers
+[ 50%] Building CXX object CMakeFiles/list.dir/test.cpp.o
+[100%] Linking CXX executable list
+[100%] Built target list
+build ready
+
+-------- ./build/list --------
+Running group "constructors"
+test "static asserts"
+[[32mOK[0m]
+test "assignment"
+[[32mOK[0m]
+test "with size"
+[[32mOK[0m]
+test "copy"
+[[32mOK[0m]
+test "default"
+[[32mOK[0m]
+Running group "modification"
+test "exceptions"
+[[32mOK[0m]
+Running group "allocator"
+test "Memory limits"
+[[32mOK[0m]
+test "stackallocator"
+[[32mOK[0m]
+test "exceptional allocator"
+[[32mOK[0m]
+
+-------- clang-tidy stackallocator.h --------
+18843 warnings generated.
+Suppressed 18844 warnings (18843 in non-user code, 1 NOLINT).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+

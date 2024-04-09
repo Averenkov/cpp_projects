@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/voventa/deque-Averenkov/build",
+  "command": "/usr/bin/clang++   -Wall -Wextra -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror -Wreturn-stack-address -Wunused-lambda-capture -g -std=c++20 -o CMakeFiles/deque.dir/test.cpp.o -c /home/voventa/deque-Averenkov/test.cpp",
+  "file": "/home/voventa/deque-Averenkov/test.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/home/voventa/biginteger-rational-Averenkov/build/CMakeFiles/rebuild_cache.dir
+/home/voventa/biginteger-rational-Averenkov/build/CMakeFiles/biginteger.dir
+/home/voventa/biginteger-rational-Averenkov/build/CMakeFiles/edit_cache.dir

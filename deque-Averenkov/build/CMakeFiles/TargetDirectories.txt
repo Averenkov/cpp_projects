@@ -1,0 +1,3 @@
+/home/voventa/deque-Averenkov/build/CMakeFiles/deque.dir
+/home/voventa/deque-Averenkov/build/CMakeFiles/edit_cache.dir
+/home/voventa/deque-Averenkov/build/CMakeFiles/rebuild_cache.dir

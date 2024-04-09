@@ -1,0 +1,8 @@
+build/
+cmake/
+data/
+.vscode/
+.idea/
+compile_commands.json
+last_log
+last_stage_log

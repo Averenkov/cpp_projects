@@ -1,0 +1,3 @@
+/home/voventa/matrix-Averenkov/build/CMakeFiles/matrix.dir
+/home/voventa/matrix-Averenkov/build/CMakeFiles/edit_cache.dir
+/home/voventa/matrix-Averenkov/build/CMakeFiles/rebuild_cache.dir
